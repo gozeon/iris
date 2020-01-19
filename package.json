@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "server": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -29,10 +30,15 @@
   },
   "homepage": "https://github.com/gozeon/iris#readme",
   "dependencies": {
+    "boom": "^7.3.0",
+    "dotenv": "^8.2.0",
+    "fastify": "^2.11.0",
+    "mongoose": "^5.8.9",
     "parcel": "^1.12.4"
   },
   "devDependencies": {
     "husky": "^3.1.0",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"
   }
