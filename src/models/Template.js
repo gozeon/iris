@@ -2,10 +2,10 @@ const mongoose = require('mongoose')
 
 const templateSchema = new mongoose.Schema(
   {
-    title: String,
-    description: String,
-    name: String,
-    version: String,
+    title: { type: String, required: true, trim: true },
+    description: { type: String, required: false, trim: true },
+    name: { type: String, required: true, trim: true },
+    version: { type: String, required: true, trim: true },
   },
   {
     timestamps: true,

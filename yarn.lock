@@ -1111,7 +1111,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-boom@^7.3.0:
+boom@^7.1.1, boom@^7.3.0:
   version "7.3.0"
   resolved "https://registry.npm.taobao.org/boom/download/boom-7.3.0.tgz#733a6d956d33b0b1999da3fe6c12996950d017b9"
   integrity sha1-czptlW0zsLGZnaP+bBKZaVDQF7k=
@@ -2443,6 +2443,21 @@ fast-safe-stringify@^2.0.7:
   version "2.0.7"
   resolved "https://registry.npm.taobao.org/fast-safe-stringify/download/fast-safe-stringify-2.0.7.tgz#124aa885899261f68aedb42a7c080de9da608743"
   integrity sha1-EkqohYmSYfaK7bQqfAgN6dpgh0M=
+
+fastify-boom@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/fastify-boom/download/fastify-boom-0.1.0.tgz#186c9a480fbbfe9f55a7bab7d9a3ba607a4780a4"
+  integrity sha1-GGyaSA+7/p9Vp7q32aO6YHpHgKQ=
+  dependencies:
+    boom "^7.1.1"
+    fastify-plugin "^0.2.2"
+
+fastify-plugin@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npm.taobao.org/fastify-plugin/download/fastify-plugin-0.2.2.tgz#e01b67685fd02e87edc98670ce2acfe251a2c715"
+  integrity sha1-4BtnaF/QLoftyYZwzirP4lGixxU=
+  dependencies:
+    semver "^5.4.1"
 
 fastify@^2.11.0:
   version "2.11.0"
