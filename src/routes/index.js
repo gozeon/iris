@@ -1,4 +1,6 @@
 const templateRoutes = require('./template')
-const routes = [...templateRoutes.routers]
+const projectRoutes = require('./project')
+
+const routes = [...templateRoutes.routers, ...projectRoutes.routers]
 
 module.exports = routes

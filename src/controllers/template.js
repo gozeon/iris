@@ -12,10 +12,12 @@ exports.getTemplates = async (request, reply) => {
 exports.getSingelTemplate = async (request, reply) => {
   const id = request.params.id
   const template = await Template.findById(id)
+
   if (_.isNull(template)) {
     fastify.log.error(`ID: ${id} not found`)
     throw boom.notFound(`ID: ${id}`)
   }
+
   return template
 }
 
@@ -29,19 +31,23 @@ exports.updateTemplate = async (request, reply) => {
   const template = request.body
   const { ...updateData } = template
   const update = await Template.findByIdAndUpdate(id, updateData)
+
   if (_.isNull(update)) {
     fastify.log.error(`ID: ${id} not found`)
     throw boom.notFound(`ID: ${id}`)
   }
+
   return update
 }
 
 exports.deleteTemplate = async (request, reply) => {
   const id = request.params.id
   const template = await Template.findByIdAndRemove(id)
+
   if (_.isNull(template)) {
     fastify.log.error(`ID: ${id} not found`)
     throw boom.notFound(`ID: ${id}`)
   }
+
   return template
 }
